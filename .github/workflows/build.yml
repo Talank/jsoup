@@ -1,7 +1,6 @@
 name: Build
 on:
-  push:
-  pull_request:
+  workflow_dispatch:
 
 jobs:
   test:
@@ -29,4 +28,3 @@ jobs:
 
       - name: Maven Verify
         run: mvn -X verify -B --file pom.xml
-...

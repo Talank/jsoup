@@ -62,8 +62,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: inotifywait-test (${{ matrix.os }}, ${{ matrix.java }})
-          path: /home/runner/inotifywait-log-test (${{ matrix.os }}, ${{ matrix.java
-            }}).csv
+          path: /home/runner/inotifywait-log-test (${{ matrix.os }}, ${{ matrix.java }}).csv
 'on':
-  - push
-  - workflow_dispatch
+  workflow_dispatch:
